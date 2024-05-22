@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="container">
+    <div class="content">
+
+    </div>
+
+</div>
+<script>
+    const content = document.querySelector('.content')
+    const newList = document.createElement('ul')
+    const newItem = document.createElement('li')
+    const anchor = document.createElement('a')
+    anchor.textContent ='Click Me!!'
+    anchor.href=`https://fusd.sharepoint.com/:p:/r/sites/Section_1352754/Class%20Materials/Unit%203%20JS%20and%20the%20DOM/3.10%20Composite%20Elements.pptx?d=w09eb14c72c0f4ab492bd1bc76bdac96e&csf=1&web=1&e=DmZxu8`
+    anchor.target ='_blank'
+    newItem.appendChild(anchor)
+    newList.appendChild(newItem)
+    content.appendChild(newList)
+
+
+</script>
+</body>
+</html>
