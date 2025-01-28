@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make Buddy dance</title>
+
+</head>
+<style>
+
+    body{
+        background-color: #000000;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    button{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #name{
+
+        font-size: medium;
+    }
+    #time{
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    label{
+        font-size: large;
+        font-family: "Georgia";
+    }
+    .Extra{
+        padding-left: 50px;
+    }
+</style>
+
+
+
+<link rel="stylesheet" href="style.css">
+<body>
+<p id="Place"></p>
+<div class="main" >
+    <div class="info" id="clear">
+
+        <h1 align="center"> Make Buddy</h1 >
+        <h3>Pick a design for Buddy</h3>
+        <div class="row">
+            <button id="normal"> normal</button>
+            <button id="Funny"> Funny</button>
+            <button id="girly"> Girly</button>
+            <button id="cool"> Cool</button>
+
+        </div>
+        <h3>Pick buddy color</h3>
+        <div class="row">
+            <button id="purple" > Purple</button>
+            <button id="green">Green</button>
+            <button id="red">Red</button>
+            <button id="yellow">Yellow</button>
+            <button id="pink">Pink</button>
+        </div>
+        <div>
+
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <label for="name">Name your Buddy</label><input type="text" id="name" name="name">
+        </div>
+        <br>
+
+        <div id="time">
+            <button id="dance" >Buddy Made</button>
+
+        </div>
+        <br>
+    </div>
+
+    <br>
+
+
+
+
+    <div class="Buddy" >
+
+        <div>
+
+
+            <img  id = buddy src="https://share.sketchpad.app/24/f26-e8d6-3ea096.png" alt="picture here" style= "width: 400px; height: 500px; align-self: center" >
+
+            <br>
+
+            <a href="Main.html" ><button> Restart</button></a>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+    const place = document. getElementById("Place")
+    const buddy = document.querySelector('img')
+    const funny = document.getElementById('Funny');
+    const normal = document.getElementById('normal')
+    const girly= document.getElementById('girly');
+    const cool = document.getElementById('cool');
+    const purple = document.getElementById('purple');
+    const green = document.getElementById('green');
+    const red = document.getElementById('red');
+    const yellow = document.getElementById('yellow');
+    const Name= document.getElementById('name');
+    const pink = document.getElementById('pink');
+    const dance = document.getElementById('dance')
+    const remove = document.getElementById('clear')
+    const by = document.getElementById('time')
+
+    dance.addEventListener('click',function (e){
+        Bname.innerHTML= ' This is your Buddy'+' '+Name.value;
+        Bname.style.fontSize="35px"
+        buddy.style.height="675px"
+        buddy.style.width="575px"
+
+        place.appendChild(Bname);
+        remove.remove();
+        by.remove();
+        document.getElementById("buddy").style.paddingLeft="200px"
+
+
+    })
+    buddy.addEventListener('click',function(e){
+        Dance()
+
+    })
+    normal.addEventListener('click', function(e){
+
+        buddy.src =`https://share.sketchpad.app/24/679-b524-765a56.png `;
+
+        colorNormal()
+
+
+    })
+
+    funny.addEventListener('click',function(e){
+        buddy.src=` https://share.sketchpad.app/24/e50-a409-f828d0.png`
+
+        if(buddy.src===`https://share.sketchpad.app/24/37b-ba2a-9e6628.png`|| buddy.src===`https://share.sketchpad.app/24/173-c68f-174cdf.png`){
+            green.addEventListener('click',function(e){
+                buddy.src=`https://share.sketchpad.app/24/37b-ba2a-9e6628.png`
+            })
+
+            red.addEventListener('click',function(e){
+                buddy.src=`https://share.sketchpad.app/24/173-c68f-174cdf.png  `
+            })
+            yellow.addEventListener('click',function(e){
+                buddy.src=`https://share.sketchpad.app/24/bc9-0c2e-047e0c.png `
+            })
+            pink.addEventListener('click',function(e){
+                buddy.src=`https://share.sketchpad.app/24/284-0e84-03faff.png  `
+            })
+            purple.addEventListener('click',function(e){
+                buddy.src=`https://share.sketchpad.app/24/781-012f-d84cd2.png `
+
+            })
+        }
+        colorFunny()
+
+    })
+    girly.addEventListener('click',function(e){
+        buddy.src=`https://share.sketchpad.app/24/965-955b-f32852.png`;
+
+
+        colorGirly()
+
+    })
+    cool.addEventListener('click', function(e){
+        buddy.src=`https://share.sketchpad.app/24/42e-1dff-2559d7.png `;
+        colorCool()
+
+
+
+    })
+    const Bname =document.createElement('h3')
+
+
+    function PURPLE(){
+
+
+
+
+        funny.addEventListener('click',function(e){
+
+            girly.addEventListener('click', function(e){
+                buddy.src=`https://share.sketchpad.app/24/856-c298-85abc4.png `
+
+            })
+            normal.addEventListener('click',function(e){
+                buddy.src=`https://share.sketchpad.app/24/55c-461d-b8fce9.png `
+
+            })
+            cool.addEventListener('click',function (e){
+                buddy.src=`https://share.sketchpad.app/24/cab-0c59-9a22c3.png `
+
+            })
+            buddy.src=` https://share.sketchpad.app/24/f1f-c3e2-c32c64.png `
+
+        })
+
+
+
+    }
+
+
+
+    function GREEN(){
+
+        funny.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/d9e-6c43-346a36.png`
+
+        })
+        normal.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/3fa-d24a-250a22.png`
+
+        })
+        girly.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/05c-8b5b-cdfb75.png`;
+
+        })
+        cool.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/7d2-b68c-04e96d.png `;
+
+        })
+
+
+
+    }
+    function RED() {
+
+
+        normal.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png `;
+
+        })
+        funny.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/b9c-864f-35b833.png`
+
+        })
+        girly.addEventListener('click', function (e){
+            buddy.src=`https://share.sketchpad.app/24/d94-d497-6f8e53.png`
+
+        })
+        cool.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/4d1-453b-181e4d.png `
+        })
+
+
+
+
+    }
+    function YELLOW(){
+
+
+        normal.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/e2d-726e-2a30bd.png `;
+
+        })
+        funny.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/a0b-9041-fa131a.png`;
+
+        })
+        girly.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/511-ed6e-37b701.png `;
+
+        })
+        cool.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/05c-20e8-c7c86b.png`;
+
+        })
+
+
+
+
+
+
+
+    }
+
+    function PINK(){
+
+
+        normal.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/6ca-3f75-50d315.png `;
+        })
+        funny.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/487-8944-2d1646.png `;
+
+        })
+        girly.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/3d3-f005-66e437.png  `;
+
+        })
+        cool.addEventListener('click',function (e){
+            buddy.src=` https://share.sketchpad.app/24/724-dfe2-e04049.png `;
+
+        })
+
+
+
+
+
+
+    }
+    function colorFunny(){
+        purple.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/f1f-c3e2-c32c64.png `
+        })
+        green.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/d9e-6c43-346a36.png`
+        })
+        red.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/b9c-864f-35b833.png `
+        })
+        yellow.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/a0b-9041-fa131a.png `
+        })
+        pink.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/487-8944-2d1646.png `
+        })
+
+        purple.addEventListener('click',function (e){
+            buddy.src=` https://share.sketchpad.app/24/f1f-c3e2-c32c64.png `;
+
+            PURPLE()
+        })
+        green.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/d9e-6c43-346a36.png`
+            GREEN()
+        })
+        red.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/b9c-864f-35b833.png`
+
+            RED()
+        })
+        yellow.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/a0b-9041-fa131a.png`;
+
+            YELLOW()
+        })
+        pink.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/487-8944-2d1646.png `;
+
+            PINK()
+        })
+
+
+    }
+    function colorGirly(){
+        purple.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/856-c298-85abc4.png `
+          PURPLE()
+        })
+
+        green.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/cad-1920-fcd2cf.png `
+            GREEN()
+
+        })
+        red.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/d94-d497-6f8e53.png`
+          RED()
+        })
+        yellow.addEventListener('click',function(e){
+            buddy.src=` https://share.sketchpad.app/24/511-ed6e-37b701.png `
+           YELLOW()
+        })
+        pink.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/3d3-f005-66e437.png `
+           PINK()
+        })
+
+
+
+
+    }
+    function colorCool(){
+
+        purple.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/cab-0c59-9a22c3.png  `
+            PURPLE()
+        })
+        green.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/22a-a8f6-a4d30b.png`
+
+            GREEN()
+        })
+        red.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/4d1-453b-181e4d.png `
+
+            RED()
+        })
+        yellow.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/05c-20e8-c7c86b.png`
+
+            YELLOW()
+        })
+        pink.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/724-dfe2-e04049.png `
+
+            PINK()
+        })
+    }
+
+    function colorNormal(){
+
+
+
+        purple.addEventListener('click',function (e){
+
+            buddy.src=`https://share.sketchpad.app/24/55c-461d-b8fce9.png`
+
+            PURPLE()
+
+        })
+        green.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/3fa-d24a-250a22.png`
+
+            GREEN()
+
+        })
+        red.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png`;
+
+
+            RED()
+
+        })
+        yellow.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/e2d-726e-2a30bd.png`;
+
+
+
+            YELLOW()
+
+        })
+        pink.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/6ca-3f75-50d315.png`
+
+
+            PINK()
+
+        })
+
+    }
+
+
+    function Dance(){
+        NormalDance();
+        GirlyDance();
+        FunnyDance()
+        CoolDance()
+    }
+    function NormalDance() {
+        NormalPurple()
+        NormalGreen();
+        NormalRed()
+        NormalYellow()
+        NormalPink();
+    }
+    function FunnyDance(){
+        FunnyPurple()
+        FunnyWhite()
+        FunnyGreen()
+        FunnyRed()
+        FunnyYellow()
+        FunnyPink()
+
+    }
+    function NormalPurple(){
+        if ( buddy.src===`https://share.sketchpad.app/24/55c-461d-b8fce9.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/2d3-7524-6ba660.png`,
+                `https://share.sketchpad.app/24/70c-f806-305d7c.png`,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if( buddy.src===`https://share.sketchpad.app/24/2d3-7524-6ba660.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/55c-461d-b8fce9.png`,
+                `https://share.sketchpad.app/24/70c-f806-305d7c.png`,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/70c-f806-305d7c.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/55c-461d-b8fce9.png`,
+                `https://share.sketchpad.app/24/2d3-7524-6ba660.png`,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/e04-bf4e-e8f055.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/762-8325-f2c6d9.png `,
+                `https://share.sketchpad.app/24/6b8-1714-d0d938.png `,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/762-8325-f2c6d9.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/e04-bf4e-e8f055.png`,
+                `https://share.sketchpad.app/24/6b8-1714-d0d938.png `,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/6b8-1714-d0d938.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/e04-bf4e-e8f055.png`,
+                `https://share.sketchpad.app/24/762-8325-f2c6d9.png `,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/f76-651c-d2def2.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/0b0-2efb-64e961.png `,
+                `https://share.sketchpad.app/24/d98-70b1-6f80ee.png`,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/0b0-2efb-64e961.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/f76-651c-d2def2.png `,
+                `https://share.sketchpad.app/24/d98-70b1-6f80ee.png`,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/d98-70b1-6f80ee.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/f76-651c-d2def2.png `,
+                `https://share.sketchpad.app/24/0b0-2efb-64e961.png `,
+            ];
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+
+    }
+    function NormalGreen(){
+        if(buddy.src===`https://share.sketchpad.app/24/3fa-d24a-250a22.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/daf-0b16-dd2a97.png `,
+                `https://share.sketchpad.app/24/dc3-3228-e67090.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src=== `https://share.sketchpad.app/24/dc3-3228-e67090.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/daf-0b16-dd2a97.png `,
+                `https://share.sketchpad.app/24/3fa-d24a-250a22.png`,
+
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/daf-0b16-dd2a97.png`){
+            let copy=[
+                `https://share.sketchpad.app/24/3fa-d24a-250a22.png`,
+                `https://share.sketchpad.app/24/dc3-3228-e67090.png` ,
+            ]
+            let I = Math.floor(Math.random() * copy.length);
+            return buddy.src= copy[I]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/e7d-ea8f-d345a5.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/8f0-7ad2-f1fea0.png `,
+                ` https://share.sketchpad.app/24/8eb-ebb5-5cd23d.png `,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/8f0-7ad2-f1fea0.png `) {
+            let pic = [
+                `https://share.sketchpad.app/24/e7d-ea8f-d345a5.png`,
+                ` https://share.sketchpad.app/24/8eb-ebb5-5cd23d.png `,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===` https://share.sketchpad.app/24/8eb-ebb5-5cd23d.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/e7d-ea8f-d345a5.png`,
+                `https://share.sketchpad.app/24/8f0-7ad2-f1fea0.png `,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/612-dcda-d1cdd8.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/bd9-6a16-3e673f.png `,
+                `https://share.sketchpad.app/24/b2b-43c0-96c8e5.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/bd9-6a16-3e673f.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/612-dcda-d1cdd8.png `,
+                `https://share.sketchpad.app/24/b2b-43c0-96c8e5.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/b2b-43c0-96c8e5.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/612-dcda-d1cdd8.png `,
+                `https://share.sketchpad.app/24/bd9-6a16-3e673f.png `,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+    }
+    function NormalRed(){
+        if(buddy.src===`https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png`){
+            let make =[
+                `https://share.sketchpad.app/24/ab7-06eb-5a3902.png `,
+                `https://share.sketchpad.app/24/12a-6d24-4b6e0f.png `,
+            ];
+            let i = Math.floor(Math.random() * make.length);
+            return buddy.src= make[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/ab7-06eb-5a3902.png`){
+            let make=[
+                `https://share.sketchpad.app/24/12a-6d24-4b6e0f.png `,
+                `https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png`,
+
+            ];
+            let I = Math.floor(Math.random() * make.length);
+            return buddy.src= make[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/12a-6d24-4b6e0f.png`){
+            let make =[
+                `https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png`,
+                `https://share.sketchpad.app/24/ab7-06eb-5a3902.png `,
+
+            ];
+            let i = Math.floor(Math.random() * make.length);
+            return buddy.src= make[i];
+        }
+
+
+        if(buddy.src===` https://share.sketchpad.app/24/21a-6503-8491f1.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/ae5-150b-82eab6.png`,
+                `https://share.sketchpad.app/24/f27-e854-f1c065.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/ae5-150b-82eab6.png`) {
+            let pic = [
+                ` https://share.sketchpad.app/24/21a-6503-8491f1.png `,
+                `https://share.sketchpad.app/24/f27-e854-f1c065.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/f27-e854-f1c065.png`) {
+            let pic = [
+                ` https://share.sketchpad.app/24/21a-6503-8491f1.png `,
+                `https://share.sketchpad.app/24/ae5-150b-82eab6.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/1bc-f3d5-90eaab.png`) {
+            let pic = [
+                ` https://share.sketchpad.app/24/304-8799-b11a4b.png`,
+                `https://share.sketchpad.app/24/2ea-04ec-50bbea.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/304-8799-b11a4b.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/1bc-f3d5-90eaab.png `,
+                `https://share.sketchpad.app/24/2ea-04ec-50bbea.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/2ea-04ec-50bbea.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/1bc-f3d5-90eaab.png `,
+                ` https://share.sketchpad.app/24/304-8799-b11a4b.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+
+    }
+    function NormalYellow(){
+        if(buddy.src===`https://share.sketchpad.app/24/e2d-726e-2a30bd.png`){
+            let image =[
+                `https://share.sketchpad.app/24/4bc-6d91-4f70ab.png`,
+                `https://share.sketchpad.app/24/1d9-e8e1-4e0408.png`,
+            ];
+            let i = Math.floor(Math.random() * image.length);
+            return buddy.src= image[i];
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/4bc-6d91-4f70ab.png`){
+            let image =[
+                `https://share.sketchpad.app/24/1d9-e8e1-4e0408.png`,
+                `https://share.sketchpad.app/24/e2d-726e-2a30bd.png`,
+            ];
+            let i = Math.floor(Math.random() * image.length);
+            return buddy.src= image[i];
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/1d9-e8e1-4e0408.png`){
+            let image =[
+                `https://share.sketchpad.app/24/4bc-6d91-4f70ab.png`,
+                `https://share.sketchpad.app/24/e2d-726e-2a30bd.png`,
+            ];
+            let I = Math.floor(Math.random() * image.length);
+            return buddy.src= image[I];
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/4f2-5088-0c8fd4.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/f92-ba6e-c0d0d2.png`,
+                `https://share.sketchpad.app/24/acd-f465-d5e8a6.png `,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/f92-ba6e-c0d0d2.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/4f2-5088-0c8fd4.png  `,
+                `https://share.sketchpad.app/24/acd-f465-d5e8a6.png `,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/acd-f465-d5e8a6.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/4f2-5088-0c8fd4.png  `,
+                `https://share.sketchpad.app/24/f92-ba6e-c0d0d2.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/d10-eaf8-dcf1bf.png `) {
+            let pic = [
+                ` https://share.sketchpad.app/24/76a-1084-9bb76a.png `,
+                `https://share.sketchpad.app/24/3ad-4d78-0674ee.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/76a-1084-9bb76a.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/d10-eaf8-dcf1bf.png `,
+                `https://share.sketchpad.app/24/3ad-4d78-0674ee.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/3ad-4d78-0674ee.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/d10-eaf8-dcf1bf.png `,
+                ` https://share.sketchpad.app/24/76a-1084-9bb76a.png `,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+    }
+    function NormalPink(){
+        if(buddy.src===`https://share.sketchpad.app/24/6ca-3f75-50d315.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/42f-b57a-082586.png`,
+                `https://share.sketchpad.app/24/a15-97bb-1ccd62.png `,
+
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i];
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/42f-b57a-082586.png`){
+            let pic =[
+
+                `https://share.sketchpad.app/24/a15-97bb-1ccd62.png `,
+                `https://share.sketchpad.app/24/6ca-3f75-50d315.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i];
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/a15-97bb-1ccd62.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/42f-b57a-082586.png`,
+                `https://share.sketchpad.app/24/6ca-3f75-50d315.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src= pic[i];
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/82d-b4d1-605f4b.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/76d-caae-a7bb3e.png `,
+
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/76d-caae-a7bb3e.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/82d-b4d1-605f4b.png `,
+
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/360-d054-98cc95.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/3e1-9943-0b0428.png `,
+                `https://share.sketchpad.app/24/896-2a62-630c59.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/3e1-9943-0b0428.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/360-d054-98cc95.png `,
+                `https://share.sketchpad.app/24/896-2a62-630c59.png`,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/896-2a62-630c59.png`) {
+            let pic = [
+                `https://share.sketchpad.app/24/360-d054-98cc95.png `,
+                `https://share.sketchpad.app/24/3e1-9943-0b0428.png `,
+            ]
+            let i = Math.floor(Math.random() * pic.length);
+            return buddy.src = pic[i]
+        }
+    }
+
+    function FunnyPurple(){
+        if(buddy.src===`https://share.sketchpad.app/24/d24-2815-0d4b2c.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/7e4-b58e-39cd12.png`,
+                `https://share.sketchpad.app/24/f1f-c3e2-c32c64.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/7e4-b58e-39cd12.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/d24-2815-0d4b2c.png`,
+                `https://share.sketchpad.app/24/f1f-c3e2-c32c64.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/f1f-c3e2-c32c64.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/d24-2815-0d4b2c.png`,
+                `https://share.sketchpad.app/24/7e4-b58e-39cd12.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/c3c-38cc-c1a0da.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/851-9ef4-a8e157.png`,
+                `https://share.sketchpad.app/24/b8d-b340-a56e91.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/851-9ef4-a8e157.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/c3c-38cc-c1a0da.png`,
+                `https://share.sketchpad.app/24/b8d-b340-a56e91.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/b8d-b340-a56e91.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/c3c-38cc-c1a0da.png`,
+                `https://share.sketchpad.app/24/851-9ef4-a8e157.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length);
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/781-012f-d84cd2.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/b3e-3b15-82e864.png `,
+                `https://share.sketchpad.app/24/977-2a6a-08e7fa.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/977-2a6a-08e7fa.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/781-012f-d84cd2.png `,
+                `https://share.sketchpad.app/24/b3e-3b15-82e864.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src=pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/b3e-3b15-82e864.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/781-012f-d84cd2.png `,
+                `https://share.sketchpad.app/24/977-2a6a-08e7fa.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src=pic[i]
+        }
+    }
+
+    function FunnyWhite(){
+        if(buddy.src===`https://share.sketchpad.app/24/e50-a409-f828d0.png`){
+            let image = [
+                ` https://share.sketchpad.app/24/699-85e3-3eb22f.png `,
+                `https://share.sketchpad.app/24/b8c-7a9e-3698e3.png  `,
+            ]
+            let i = Math.floor(Math.random()* image.length);
+            return buddy.src = image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/699-85e3-3eb22f.png`){
+            let image = [
+                `https://share.sketchpad.app/24/e50-a409-f828d0.png`,
+                `https://share.sketchpad.app/24/b8c-7a9e-3698e3.png `,
+            ]
+            let i = Math.floor(Math.random()* image.length);
+            return buddy.src = image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/b8c-7a9e-3698e3.png`){
+            let image =[
+                `https://share.sketchpad.app/24/e50-a409-f828d0.png`,
+                ` https://share.sketchpad.app/24/699-85e3-3eb22f.png `,
+            ];
+            let i = Math.floor(Math.random()* image.length);
+            return buddy.src = image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/cee-a25e-ad2a3e.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/bdd-dcd9-c4e827.png`,
+                `https://share.sketchpad.app/24/a62-c168-60fd60.png `,
+            ];
+            let i = Math.floor(Math.random()* pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/bdd-dcd9-c4e827.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/a62-c168-60fd60.png `,
+                `https://share.sketchpad.app/24/cee-a25e-ad2a3e.png`,
+            ];
+            let i = Math.floor(Math.random()* pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/a62-c168-60fd60.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/cee-a25e-ad2a3e.png`,
+                `https://share.sketchpad.app/24/bdd-dcd9-c4e827.png`,
+            ];
+            let i = Math.floor(Math.random()* pic.length);
+            return buddy.src = pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/331-8b61-9737e7.png`){
+            let image=[
+                `https://share.sketchpad.app/24/9dd-4a7b-8577d0.png `,
+                `https://share.sketchpad.app/24/ccf-02cb-56c3d8.png`,
+            ]
+            let i = Math.floor(Math.random()* image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/9dd-4a7b-8577d0.png`){
+            let image=[
+                `https://share.sketchpad.app/24/331-8b61-9737e7.png `,
+                ` https://share.sketchpad.app/24/ccf-02cb-56c3d8.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/ccf-02cb-56c3d8.png`){
+            let image=[
+                `https://share.sketchpad.app/24/331-8b61-9737e7.png `,
+                `https://share.sketchpad.app/24/9dd-4a7b-8577d0.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+
+    }
+    function FunnyGreen(){
+        if(buddy.src===`https://share.sketchpad.app/24/d9e-6c43-346a36.png`){
+            let img =[
+                `https://share.sketchpad.app/24/946-2d69-1f17b7.png`,
+                `https://share.sketchpad.app/24/415-3a96-6f9d74.png`,
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/946-2d69-1f17b7.png`){
+            let img =[
+                `https://share.sketchpad.app/24/d9e-6c43-346a36.png`,
+                `https://share.sketchpad.app/24/415-3a96-6f9d74.png`,
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/415-3a96-6f9d74.png `){
+            let img =[
+                `https://share.sketchpad.app/24/d9e-6c43-346a36.png`,
+                `https://share.sketchpad.app/24/946-2d69-1f17b7.png`,
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/d39-86a8-2a8b4f.png`){
+            let img =[
+                `https://share.sketchpad.app/24/c83-8808-03d47d.png`,
+                `https://share.sketchpad.app/24/3ce-bbbd-23a458.png`,
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/c83-8808-03d47d.png`){
+            let img =[
+                `https://share.sketchpad.app/24/d39-86a8-2a8b4f.png`,
+                `https://share.sketchpad.app/24/3ce-bbbd-23a458.png`,
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/3ce-bbbd-23a458.png`){
+            let img =[
+                `https://share.sketchpad.app/24/d39-86a8-2a8b4f.png`,
+                `https://share.sketchpad.app/24/c83-8808-03d47d.png`,
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/37b-ba2a-9e6628.png`){
+            let img =[
+                ` https://share.sketchpad.app/24/6d8-3ddc-4c2ef8.png`,
+                `https://share.sketchpad.app/24/fd7-b3c9-d90c25.png`
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/6d8-3ddc-4c2ef8.png`){
+            let img =[
+                `https://share.sketchpad.app/24/37b-ba2a-9e6628.png`,
+                `https://share.sketchpad.app/24/fd7-b3c9-d90c25.png`
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/fd7-b3c9-d90c25.png`){
+            let img =[
+                `https://share.sketchpad.app/24/37b-ba2a-9e6628.png`,
+                `https://share.sketchpad.app/24/6d8-3ddc-4c2ef8.png`,
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src=img[i]
+        }
+    }
+    function FunnyRed(){
+        if(buddy.src===`https://share.sketchpad.app/24/b9c-864f-35b833.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/da1-1c3b-d9ba9b.png`,
+                `https://share.sketchpad.app/24/d01-dd1c-364d83.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src=pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/da1-1c3b-d9ba9b.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/b9c-864f-35b833.png`,
+                `https://share.sketchpad.app/24/d01-dd1c-364d83.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src=pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/d01-dd1c-364d83.png`){
+            let pic=[
+                `https://share.sketchpad.app/24/da1-1c3b-d9ba9b.png`,
+                `https://share.sketchpad.app/24/b9c-864f-35b833.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src=pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/867-0eb6-5979c3.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/459-2572-ca39f4.png`,
+                `https://share.sketchpad.app/24/48e-99d3-e13bd7.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/459-2572-ca39f4.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/867-0eb6-5979c3.png`,
+                `https://share.sketchpad.app/24/48e-99d3-e13bd7.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/48e-99d3-e13bd7.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/867-0eb6-5979c3.png`,
+                `https://share.sketchpad.app/24/459-2572-ca39f4.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/173-c68f-174cdf.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/669-6c1d-ae860c.png`,
+                `https://share.sketchpad.app/24/7d9-0fd0-0b2c9a.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/669-6c1d-ae860c.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/173-c68f-174cdf.png`,
+                `https://share.sketchpad.app/24/7d9-0fd0-0b2c9a.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/7d9-0fd0-0b2c9a.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/173-c68f-174cdf.png`,
+                `https://share.sketchpad.app/24/669-6c1d-ae860c.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+    }
+    function FunnyYellow(){
+
+        if(buddy.src===`https://share.sketchpad.app/24/a0b-9041-fa131a.png`){
+            let img =[
+
+                `https://share.sketchpad.app/24/1d4-10c3-ad0cc6.png`,
+
+                `https://share.sketchpad.app/24/893-7806-211a2d.png`,
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/1d4-10c3-ad0cc6.png`){
+            let img =[
+                `https://share.sketchpad.app/24/a0b-9041-fa131a.png`,
+
+
+                `https://share.sketchpad.app/24/893-7806-211a2d.png`,
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/893-7806-211a2d.png`)  {
+            let img =[
+
+                `https://share.sketchpad.app/24/1d4-10c3-ad0cc6.png`,
+                `https://share.sketchpad.app/24/a0b-9041-fa131a.png`,
+
+
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/bc9-0c2e-047e0c.png`)  {
+            let img =[
+
+                `https://share.sketchpad.app/24/767-e3c8-3b0800.png `,
+                `https://share.sketchpad.app/24/4a2-de3e-89168b.png`,
+
+
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/767-e3c8-3b0800.png`)  {
+            let img =[
+
+                `https://share.sketchpad.app/24/bc9-0c2e-047e0c.png `,
+                `https://share.sketchpad.app/24/4a2-de3e-89168b.png`,
+
+
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/4a2-de3e-89168b.png`)  {
+            let img =[
+
+                `https://share.sketchpad.app/24/bc9-0c2e-047e0c.png `,
+                `https://share.sketchpad.app/24/767-e3c8-3b0800.png `,
+
+
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/45b-40d4-add8c2.png`)  {
+            let img =[
+
+                `https://share.sketchpad.app/24/b34-344e-6f3b4b.png `,
+                `https://share.sketchpad.app/24/182-9547-b37fef.png`,
+
+
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/b34-344e-6f3b4b.png`)  {
+            let img =[
+
+                `https://share.sketchpad.app/24/45b-40d4-add8c2.png `,
+                `https://share.sketchpad.app/24/182-9547-b37fef.png`,
+
+
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/182-9547-b37fef.png`)  {
+            let img =[
+
+                `https://share.sketchpad.app/24/45b-40d4-add8c2.png `,
+                `https://share.sketchpad.app/24/b34-344e-6f3b4b.png `,
+
+            ]
+            let i = Math.floor(Math.random()*img.length)
+            return buddy.src= img[i]
+        }
+
+
+    }
+    function FunnyPink(){
+        if(buddy.src===`https://share.sketchpad.app/24/487-8944-2d1646.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/365-a7ff-8e262c.png `,
+                `https://share.sketchpad.app/24/e7e-863d-2f0213.png`,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/365-a7ff-8e262c.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/487-8944-2d1646.png `,
+                `https://share.sketchpad.app/24/e7e-863d-2f0213.png`,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/e7e-863d-2f0213.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/487-8944-2d1646.png `,
+                `https://share.sketchpad.app/24/365-a7ff-8e262c.png `,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/284-0e84-03faff.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/f5c-a66c-c0ba6d.png `,
+                `https://share.sketchpad.app/24/842-5310-020c6d.png`,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/f5c-a66c-c0ba6d.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/284-0e84-03faff.png `,
+                `https://share.sketchpad.app/24/842-5310-020c6d.png`,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/842-5310-020c6d.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/284-0e84-03faff.png `,
+                `https://share.sketchpad.app/24/f5c-a66c-c0ba6d.png `,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/f08-07ce-f95f10.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/20a-6b5d-d54b60.png  `,
+                `https://share.sketchpad.app/24/5bb-be5f-bd745c.png `,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/20a-6b5d-d54b60.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/f08-07ce-f95f10.png `,
+                `https://share.sketchpad.app/24/5bb-be5f-bd745c.png `,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/5bb-be5f-bd745c.png `){
+            let pic =[
+                `https://share.sketchpad.app/24/f08-07ce-f95f10.png `,
+                `https://share.sketchpad.app/24/20a-6b5d-d54b60.png  `,
+            ];
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+    }
+    function GirlyDance(){
+        GirlyPurple()
+        GirlyGreen()
+        GirlyRED()
+        GirlyYellow()
+        GirlyPink()
+    }
+    function GirlyPurple(){
+        if(buddy.src===`https://share.sketchpad.app/24/856-c298-85abc4.png`){
+            let image=[
+                `https://share.sketchpad.app/24/51d-4e92-c11574.png`,
+                `https://share.sketchpad.app/24/aa7-a2fa-3d691a.png`,
+                `https://share.sketchpad.app/24/efa-472a-22dd67.png `,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/51d-4e92-c11574.png`){
+            let image=[
+                `https://share.sketchpad.app/24/856-c298-85abc4.png `,
+                `https://share.sketchpad.app/24/aa7-a2fa-3d691a.png`,
+                `https://share.sketchpad.app/24/efa-472a-22dd67.png `,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/aa7-a2fa-3d691a.png`){
+            let image=[
+                `https://share.sketchpad.app/24/856-c298-85abc4.png `,
+                `https://share.sketchpad.app/24/51d-4e92-c11574.png `,
+                `https://share.sketchpad.app/24/efa-472a-22dd67.png`,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/efa-472a-22dd67.png`){
+            let image=[
+                `https://share.sketchpad.app/24/856-c298-85abc4.png `,
+                `https://share.sketchpad.app/24/51d-4e92-c11574.png `,
+                `https://share.sketchpad.app/24/aa7-a2fa-3d691a.png `
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/b22-27f7-9d7d04.png`){
+            let image=[
+                `https://share.sketchpad.app/24/e00-0fab-4fa912.png`,
+                `https://share.sketchpad.app/24/56b-97a1-a24081.png `,
+                `https://share.sketchpad.app/24/8b8-46b9-5b6d78.png`,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/e00-0fab-4fa912.png`){
+            let image=[
+                `https://share.sketchpad.app/24/b22-27f7-9d7d04.png`,
+                `https://share.sketchpad.app/24/56b-97a1-a24081.png`,
+                `https://share.sketchpad.app/24/8b8-46b9-5b6d78.png`,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/56b-97a1-a24081.png`){
+            let image=[
+                `https://share.sketchpad.app/24/b22-27f7-9d7d04.png`,
+                `https://share.sketchpad.app/24/e00-0fab-4fa912.png`,
+                `https://share.sketchpad.app/24/8b8-46b9-5b6d78.png`,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/8b8-46b9-5b6d78.png`){
+            let image=[
+                `https://share.sketchpad.app/24/b22-27f7-9d7d04.png`,
+                `https://share.sketchpad.app/24/e00-0fab-4fa912.png`,
+                `https://share.sketchpad.app/24/56b-97a1-a24081.png`,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/1f4-8ca9-4a9a7f.png`){
+            let image=[
+                `https://share.sketchpad.app/24/448-aa96-48f391.png `,
+                ` https://share.sketchpad.app/24/e9e-eb60-a02a1f.png `,
+                `https://share.sketchpad.app/24/240-ce5d-2e7287.png `,
+
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/448-aa96-48f391.png`){
+            let image=[
+                `https://share.sketchpad.app/24/1f4-8ca9-4a9a7f.png`,
+                ` https://share.sketchpad.app/24/e9e-eb60-a02a1f.png `,
+                `https://share.sketchpad.app/24/240-ce5d-2e7287.png `,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/e9e-eb60-a02a1f.png`){
+            let image=[
+                ` https://share.sketchpad.app/24/1f4-8ca9-4a9a7f.png`,
+                `https://share.sketchpad.app/24/448-aa96-48f391.png`,
+                `https://share.sketchpad.app/24/240-ce5d-2e7287.png `,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/240-ce5d-2e7287.png`){
+            let image=[
+                `https://share.sketchpad.app/24/1f4-8ca9-4a9a7f.png`,
+                `https://share.sketchpad.app/24/448-aa96-48f391.png`,
+                ` https://share.sketchpad.app/24/e9e-eb60-a02a1f.png`,
+            ]
+
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+    }
+    function GirlyGreen(){
+        if(buddy.src===`https://share.sketchpad.app/24/05c-8b5b-cdfb75.png`){
+            let image =[
+                `https://share.sketchpad.app/24/19a-6234-f8a4e3.png `,
+                `https://share.sketchpad.app/24/784-b98c-31c400.png  `,
+                `https://share.sketchpad.app/24/3d5-482f-b07273.png`,
+            ]
+            let i = Math.floor(Math.random()* image.length)
+            return buddy.src = image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/19a-6234-f8a4e3.png`){
+            let image =[
+                `https://share.sketchpad.app/24/05c-8b5b-cdfb75.png`,
+                `https://share.sketchpad.app/24/784-b98c-31c400.png  `,
+                `https://share.sketchpad.app/24/3d5-482f-b07273.png`,
+            ]
+            let i = Math.floor(Math.random()* image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/784-b98c-31c400.png`){
+            let image =[
+                `https://share.sketchpad.app/24/05c-8b5b-cdfb75.png`,
+                `https://share.sketchpad.app/24/19a-6234-f8a4e3.png `,
+                `https://share.sketchpad.app/24/3d5-482f-b07273.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/3d5-482f-b07273.png`){
+            let image =[
+                `https://share.sketchpad.app/24/05c-8b5b-cdfb75.png`,
+                `https://share.sketchpad.app/24/19a-6234-f8a4e3.png `,
+                `https://share.sketchpad.app/24/784-b98c-31c400.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/a4b-f794-06be77.png`){
+            let image =[
+                `https://share.sketchpad.app/24/054-bdaa-9f7d09.png `,
+                `https://share.sketchpad.app/24/5da-fa8d-7bf7d9.png `,
+                `https://share.sketchpad.app/24/858-8be7-01e3c4.png  `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/054-bdaa-9f7d09.png`){
+            let image =[
+                `https://share.sketchpad.app/24/5da-fa8d-7bf7d9.png `,
+                ` https://share.sketchpad.app/24/a4b-f794-06be77.png`,
+                `https://share.sketchpad.app/24/858-8be7-01e3c4.png  `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/5da-fa8d-7bf7d9.png`){
+            let image =[
+                `https://share.sketchpad.app/24/a4b-f794-06be77.png `,
+                `https://share.sketchpad.app/24/054-bdaa-9f7d09.png `,
+                `https://share.sketchpad.app/24/858-8be7-01e3c4.png  `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/858-8be7-01e3c4.png`){
+            let image =[
+                `https://share.sketchpad.app/24/a4b-f794-06be77.png `,
+                `https://share.sketchpad.app/24/054-bdaa-9f7d09.png `,
+                `https://share.sketchpad.app/24/5da-fa8d-7bf7d9.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/cad-1920-fcd2cf.png`){
+            let image =[
+                `https://share.sketchpad.app/24/8a0-3792-088abd.png `,
+                `https://share.sketchpad.app/24/70b-1015-aa53ba.png`,
+                `https://share.sketchpad.app/24/e0f-601f-03dc74.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/8a0-3792-088abd.png`){
+            let image =[
+                ` https://share.sketchpad.app/24/cad-1920-fcd2cf.png  `,
+                `https://share.sketchpad.app/24/e0f-601f-03dc74.png `,
+                `https://share.sketchpad.app/24/70b-1015-aa53ba.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/70b-1015-aa53ba.png`){
+            let image =[
+                `https://share.sketchpad.app/24/cad-1920-fcd2cf.png  `,
+                `https://share.sketchpad.app/24/8a0-3792-088abd.png `,
+                `https://share.sketchpad.app/24/e0f-601f-03dc74.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/e0f-601f-03dc74.png`){
+            let image =[
+                `https://share.sketchpad.app/24/cad-1920-fcd2cf.png  `,
+                `https://share.sketchpad.app/24/8a0-3792-088abd.png `,
+                `https://share.sketchpad.app/24/70b-1015-aa53ba.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src=image[i]
+        }
+    }
+    function GirlyRED(){
+        if(buddy.src===`https://share.sketchpad.app/24/d94-d497-6f8e53.png`){
+            let image =[
+                `https://share.sketchpad.app/24/76e-8ef2-6a93b9.png` ,
+                `https://share.sketchpad.app/24/d2a-ff14-fe6cc5.png`,
+                `https://share.sketchpad.app/24/159-68fc-a16611.png`,
+
+            ]
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/76e-8ef2-6a93b9.png`){
+            let image =[
+                `https://share.sketchpad.app/24/d2a-ff14-fe6cc5.png `,
+                `https://share.sketchpad.app/24/390-6658-22f19b.png`,
+                `https://share.sketchpad.app/24/159-68fc-a16611.png`,
+            ]
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/390-6658-22f19b.png`){
+            let image =[
+                `https://share.sketchpad.app/24/d2a-ff14-fe6cc5.png `,
+                'https://share.sketchpad.app/24/76e-8ef2-6a93b9.png',
+                `https://share.sketchpad.app/24/159-68fc-a16611.png`,
+            ]
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/159-68fc-a16611.png`){
+            let image =[
+                `https://share.sketchpad.app/24/d2a-ff14-fe6cc5.png  `,
+                `https://share.sketchpad.app/24/390-6658-22f19b.png`,
+                `https://share.sketchpad.app/24/76e-8ef2-6a93b9.png`,
+            ]
+            let I =Math.floor(Math.random() * image.length);
+            return buddy.src = image[I]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/d2a-ff14-fe6cc5.png`){
+            let image =[
+                `https://share.sketchpad.app/24/76e-8ef2-6a93b9.png`,
+                `https://share.sketchpad.app/24/390-6658-22f19b.png`,
+                `https://share.sketchpad.app/24/159-68fc-a16611.png`,
+            ]
+            let II =Math.floor(Math.random() * image.length);
+            return buddy.src = image[II]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/318-be43-11b3eb.png`){
+            let image =[
+                `https://share.sketchpad.app/24/648-52b3-5a7ec7.png `,
+                ` https://share.sketchpad.app/24/1a9-a215-37f1d1.png`,
+                `https://share.sketchpad.app/24/d12-41ff-afb7a5.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/648-52b3-5a7ec7.png`){
+            let image =[
+                `https://share.sketchpad.app/24/318-be43-11b3eb.png `,
+                ` https://share.sketchpad.app/24/1a9-a215-37f1d1.png`,
+                `https://share.sketchpad.app/24/d12-41ff-afb7a5.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/1a9-a215-37f1d1.png`){
+            let image =[
+                `https://share.sketchpad.app/24/318-be43-11b3eb.png `,
+                `https://share.sketchpad.app/24/648-52b3-5a7ec7.png `,
+                `https://share.sketchpad.app/24/d12-41ff-afb7a5.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/d12-41ff-afb7a5.png`){
+            let image =[
+                `https://share.sketchpad.app/24/318-be43-11b3eb.png `,
+                `https://share.sketchpad.app/24/648-52b3-5a7ec7.png `,
+                ` https://share.sketchpad.app/24/1a9-a215-37f1d1.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/4f8-7f1d-a0547b.png`){
+            let image =[
+                `https://share.sketchpad.app/24/648-52b3-5a7ec7.png`,
+                `https://share.sketchpad.app/24/1a9-a215-37f1d1.png `,
+                `https://share.sketchpad.app/24/d12-41ff-afb7a5.png  `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/648-52b3-5a7ec7.png`){
+            let image =[
+                `https://share.sketchpad.app/24/4f8-7f1d-a0547b.png `,
+                `https://share.sketchpad.app/24/1a9-a215-37f1d1.png `,
+                `https://share.sketchpad.app/24/d12-41ff-afb7a5.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/1a9-a215-37f1d1.png`){
+            let image =[
+                `https://share.sketchpad.app/24/4f8-7f1d-a0547b.png `,
+                `https://share.sketchpad.app/24/648-52b3-5a7ec7.png`,
+                `https://share.sketchpad.app/24/d12-41ff-afb7a5.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/d12-41ff-afb7a5.png`){
+            let image =[
+                `https://share.sketchpad.app/24/4f8-7f1d-a0547b.png `,
+                `https://share.sketchpad.app/24/648-52b3-5a7ec7.png`,
+                `https://share.sketchpad.app/24/1a9-a215-37f1d1.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+
+    }
+    function GirlyYellow(){
+        if(buddy.src===`https://share.sketchpad.app/24/511-ed6e-37b701.png`){
+            let image =[
+                `https://share.sketchpad.app/24/eea-4f8d-616132.png  `,
+                `https://share.sketchpad.app/24/0c7-0790-877286.png`,
+                `https://share.sketchpad.app/24/2f9-f319-7e476a.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/eea-4f8d-616132.png`){
+            let image =[
+                `https://share.sketchpad.app/24/511-ed6e-37b701.png `,
+                `https://share.sketchpad.app/24/0c7-0790-877286.png `,
+                `https://share.sketchpad.app/24/2f9-f319-7e476a.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/0c7-0790-877286.png`){
+            let image =[
+                `https://share.sketchpad.app/24/511-ed6e-37b701.png `,
+                `https://share.sketchpad.app/24/eea-4f8d-616132.png  `,
+                `https://share.sketchpad.app/24/2f9-f319-7e476a.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/2f9-f319-7e476a.png`){
+            let image =[
+                `https://share.sketchpad.app/24/511-ed6e-37b701.png `,
+                `https://share.sketchpad.app/24/eea-4f8d-616132.png  `,
+                `https://share.sketchpad.app/24/0c7-0790-877286.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/608-815d-804bf6.png`){
+            let image =[
+                `https://share.sketchpad.app/24/387-b5c6-3c2336.png `,
+                `https://share.sketchpad.app/24/423-6a8d-7ef313.png `,
+                `https://share.sketchpad.app/24/a41-e050-d52b7a.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/423-6a8d-7ef313.png`){
+            let image =[
+                `https://share.sketchpad.app/24/608-815d-804bf6.png `,
+                `https://share.sketchpad.app/24/387-b5c6-3c2336.png `,
+                `https://share.sketchpad.app/24/a41-e050-d52b7a.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/a41-e050-d52b7a.png`){
+            let image =[
+                `https://share.sketchpad.app/24/608-815d-804bf6.png `,
+                `https://share.sketchpad.app/24/387-b5c6-3c2336.png `,
+                `https://share.sketchpad.app/24/423-6a8d-7ef313.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/387-b5c6-3c2336.png`){
+            let image =[
+                `https://share.sketchpad.app/24/608-815d-804bf6.png `,
+                `https://share.sketchpad.app/24/423-6a8d-7ef313.png `,
+                `https://share.sketchpad.app/24/a41-e050-d52b7a.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/0f4-4f49-f2b80b.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/410-38e4-20df66.png`,
+                `https://share.sketchpad.app/24/2e8-a7fb-bcc8a8.png`,
+                `https://share.sketchpad.app/24/cc4-d7d4-ba0a7a.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/410-38e4-20df66.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/0f4-4f49-f2b80b.png `,
+                `https://share.sketchpad.app/24/2e8-a7fb-bcc8a8.png`,
+                `https://share.sketchpad.app/24/cc4-d7d4-ba0a7a.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/2e8-a7fb-bcc8a8.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/0f4-4f49-f2b80b.png `,
+                `https://share.sketchpad.app/24/410-38e4-20df66.png`,
+                `https://share.sketchpad.app/24/cc4-d7d4-ba0a7a.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/cc4-d7d4-ba0a7a.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/0f4-4f49-f2b80b.png `,
+                `https://share.sketchpad.app/24/410-38e4-20df66.png`,
+                `https://share.sketchpad.app/24/2e8-a7fb-bcc8a8.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+    }
+    function GirlyPink(){
+        if(buddy.src===`https://share.sketchpad.app/24/3d3-f005-66e437.png`){
+            let image =[
+                `https://share.sketchpad.app/24/d5f-99b5-babb72.png `,
+                `https://share.sketchpad.app/24/244-8bba-c2ea21.png `,
+                `https://share.sketchpad.app/24/a31-5b82-c88985.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/d5f-99b5-babb72.png`){
+            let image =[
+                `https://share.sketchpad.app/24/3d3-f005-66e437.png`,
+                `https://share.sketchpad.app/24/244-8bba-c2ea21.png `,
+                `https://share.sketchpad.app/24/a31-5b82-c88985.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/244-8bba-c2ea21.png`){
+            let image =[
+                `https://share.sketchpad.app/24/3d3-f005-66e437.png `,
+                `https://share.sketchpad.app/24/d5f-99b5-babb72.png `,
+                `https://share.sketchpad.app/24/a31-5b82-c88985.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/a31-5b82-c88985.png`){
+            let image =[
+                `https://share.sketchpad.app/24/3d3-f005-66e437.png `,
+                `https://share.sketchpad.app/24/d5f-99b5-babb72.png`,
+                `https://share.sketchpad.app/24/244-8bba-c2ea21.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/853-e5b1-c03db1.png`){
+            let image =[
+                `https://share.sketchpad.app/24/dc0-b04a-f3a39c.png`,
+                `https://share.sketchpad.app/24/b9d-5ded-23a06b.png `,
+                `https://share.sketchpad.app/24/529-70f7-80f3fb.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/dc0-b04a-f3a39c.png`){
+            let image =[
+                `https://share.sketchpad.app/24/853-e5b1-c03db1.png`,
+                `https://share.sketchpad.app/24/b9d-5ded-23a06b.png `,
+                `https://share.sketchpad.app/24/529-70f7-80f3fb.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/b9d-5ded-23a06b.png`){
+            let image =[
+                `https://share.sketchpad.app/24/853-e5b1-c03db1.png`,
+                `https://share.sketchpad.app/24/dc0-b04a-f3a39c.png`,
+                `https://share.sketchpad.app/24/529-70f7-80f3fb.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/529-70f7-80f3fb.png`){
+            let image =[
+                `https://share.sketchpad.app/24/853-e5b1-c03db1.png`,
+                `https://share.sketchpad.app/24/dc0-b04a-f3a39c.png`,
+                `https://share.sketchpad.app/24/b9d-5ded-23a06b.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/907-5a1d-525ba1.png`){
+            let image =[
+                `  https://share.sketchpad.app/24/8c4-9a23-064d13.png  `,
+                `https://share.sketchpad.app/24/757-d42b-cef572.png`,
+                ` https://share.sketchpad.app/24/eed-73c8-e8312c.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/8c4-9a23-064d13.png`){
+            let image =[
+                `  https://share.sketchpad.app/24/907-5a1d-525ba1.png  `,
+                `https://share.sketchpad.app/24/757-d42b-cef572.png`,
+                ` https://share.sketchpad.app/24/eed-73c8-e8312c.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/757-d42b-cef572.png`){
+            let image =[
+                `  https://share.sketchpad.app/24/907-5a1d-525ba1.png  `,
+                ` https://share.sketchpad.app/24/8c4-9a23-064d13.png `,
+                ` https://share.sketchpad.app/24/eed-73c8-e8312c.png `,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+        if(buddy.src===`https://share.sketchpad.app/24/eed-73c8-e8312c.png`){
+            let image =[
+                `  https://share.sketchpad.app/24/907-5a1d-525ba1.png  `,
+                ` https://share.sketchpad.app/24/8c4-9a23-064d13.png `,
+                `https://share.sketchpad.app/24/757-d42b-cef572.png`,
+            ]
+            let i = Math.floor(Math.random()*image.length)
+            return buddy.src= image[i]
+        }
+    }
+
+    function CoolDance(){
+        CoolPurple()
+        CoolGreen()
+        CoolRed()
+        CoolYellow()
+        CoolPink()
+    }
+    function CoolPurple(){
+        if(buddy.src===`https://share.sketchpad.app/24/cab-0c59-9a22c3.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/56a-e21c-2112dc.png `,
+                `https://share.sketchpad.app/24/845-4103-8d74cb.png `,
+                `https://share.sketchpad.app/24/8b4-7e8e-aca008.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/56a-e21c-2112dc.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/cab-0c59-9a22c3.png`,
+                `https://share.sketchpad.app/24/845-4103-8d74cb.png `,
+                `https://share.sketchpad.app/24/8b4-7e8e-aca008.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/845-4103-8d74cb.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/cab-0c59-9a22c3.png`,
+                `https://share.sketchpad.app/24/56a-e21c-2112dc.png `,
+                `https://share.sketchpad.app/24/8b4-7e8e-aca008.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/8b4-7e8e-aca008.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/cab-0c59-9a22c3.png`,
+                `https://share.sketchpad.app/24/56a-e21c-2112dc.png `,
+                `https://share.sketchpad.app/24/845-4103-8d74cb.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/1e7-1c78-780451.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/94c-5e23-417671.png `,
+                `https://share.sketchpad.app/24/cab-cdf5-d64f80.png `,
+                `https://share.sketchpad.app/24/1c5-ec3a-ae04be.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/94c-5e23-417671.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/1e7-1c78-780451.png  `,
+                `https://share.sketchpad.app/24/cab-cdf5-d64f80.png `,
+                `https://share.sketchpad.app/24/1c5-ec3a-ae04be.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/cab-cdf5-d64f80.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/1e7-1c78-780451.png  `,
+                `https://share.sketchpad.app/24/94c-5e23-417671.png `,
+                `https://share.sketchpad.app/24/1c5-ec3a-ae04be.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/1c5-ec3a-ae04be.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/1e7-1c78-780451.png  `,
+                `https://share.sketchpad.app/24/94c-5e23-417671.png `,
+                `https://share.sketchpad.app/24/cab-cdf5-d64f80.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/aaa-d3e1-047cfa.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/228-ae64-9c6edc.png  `,
+                `https://share.sketchpad.app/24/e5a-cc14-81dbaa.png`,
+                `https://share.sketchpad.app/24/bbd-2b9b-881883.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/228-ae64-9c6edc.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/aaa-d3e1-047cfa.png `,
+                `https://share.sketchpad.app/24/e5a-cc14-81dbaa.png`,
+                `https://share.sketchpad.app/24/bbd-2b9b-881883.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/e5a-cc14-81dbaa.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/aaa-d3e1-047cfa.png `,
+                `https://share.sketchpad.app/24/228-ae64-9c6edc.png  `,
+                `https://share.sketchpad.app/24/bbd-2b9b-881883.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/bbd-2b9b-881883.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/aaa-d3e1-047cfa.png  `,
+                `https://share.sketchpad.app/24/228-ae64-9c6edc.png  `,
+                `https://share.sketchpad.app/24/e5a-cc14-81dbaa.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+    }
+    function CoolGreen(){
+        if(buddy.src===`https://share.sketchpad.app/24/7d2-b68c-04e96d.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/f21-5236-9e3dff.png `,
+                `https://share.sketchpad.app/24/bab-9d4e-f6392f.png `,
+                `https://share.sketchpad.app/24/959-5429-06f6c1.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/f21-5236-9e3dff.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/7d2-b68c-04e96d.png`,
+                `https://share.sketchpad.app/24/bab-9d4e-f6392f.png `,
+                `https://share.sketchpad.app/24/959-5429-06f6c1.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/bab-9d4e-f6392f.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/7d2-b68c-04e96d.png`,
+                `https://share.sketchpad.app/24/f21-5236-9e3dff.png `,
+                `https://share.sketchpad.app/24/959-5429-06f6c1.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/959-5429-06f6c1.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/7d2-b68c-04e96d.png`,
+                `https://share.sketchpad.app/24/f21-5236-9e3dff.png `,
+                `https://share.sketchpad.app/24/bab-9d4e-f6392f.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/5c3-592d-e7f70b.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/828-53d0-3728bb.png`,
+                `https://share.sketchpad.app/24/1e3-186b-c2b15b.png `,
+                `https://share.sketchpad.app/24/ffe-ccb3-6452a4.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/828-53d0-3728bb.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/5c3-592d-e7f70b.png `,
+                `https://share.sketchpad.app/24/1e3-186b-c2b15b.png `,
+                `https://share.sketchpad.app/24/ffe-ccb3-6452a4.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/1e3-186b-c2b15b.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/5c3-592d-e7f70b.png `,
+                `https://share.sketchpad.app/24/828-53d0-3728bb.png`,
+                `https://share.sketchpad.app/24/ffe-ccb3-6452a4.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/ffe-ccb3-6452a4.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/5c3-592d-e7f70b.png `,
+                `https://share.sketchpad.app/24/828-53d0-3728bb.png`,
+                `https://share.sketchpad.app/24/1e3-186b-c2b15b.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/22a-a8f6-a4d30b.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/2d6-49bd-29ae15.png `,
+                `https://share.sketchpad.app/24/e2e-d455-350e8c.png `,
+                `https://share.sketchpad.app/24/5f5-09db-cbd2a2.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/2d6-49bd-29ae15.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/22a-a8f6-a4d30b.png `,
+                `https://share.sketchpad.app/24/e2e-d455-350e8c.png`,
+                `https://share.sketchpad.app/24/5f5-09db-cbd2a2.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/e2e-d455-350e8c.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/22a-a8f6-a4d30b.png `,
+                `https://share.sketchpad.app/24/2d6-49bd-29ae15.png `,
+                `https://share.sketchpad.app/24/5f5-09db-cbd2a2.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/5f5-09db-cbd2a2.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/22a-a8f6-a4d30b.png `,
+                `https://share.sketchpad.app/24/2d6-49bd-29ae15.png `,
+                `https://share.sketchpad.app/24/e2e-d455-350e8c.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+    }
+    function CoolRed(){
+        if(buddy.src===`https://share.sketchpad.app/24/4d1-453b-181e4d.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/60a-4303-e47a1b.png`,
+                `https://share.sketchpad.app/24/e4a-4a59-ba09a1.png `,
+                `https://share.sketchpad.app/24/45a-9292-0c336e.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/60a-4303-e47a1b.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/4d1-453b-181e4d.png `,
+                `https://share.sketchpad.app/24/e4a-4a59-ba09a1.png `,
+                `https://share.sketchpad.app/24/45a-9292-0c336e.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/e4a-4a59-ba09a1.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/4d1-453b-181e4d.png `,
+                `https://share.sketchpad.app/24/60a-4303-e47a1b.png`,
+                `https://share.sketchpad.app/24/45a-9292-0c336e.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/45a-9292-0c336e.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/4d1-453b-181e4d.png `,
+                `https://share.sketchpad.app/24/60a-4303-e47a1b.png`,
+                `https://share.sketchpad.app/24/e4a-4a59-ba09a1.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/4b7-a94c-66d5ca.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/17c-fcb4-647de4.png`,
+                `https://share.sketchpad.app/24/1d9-8ecf-b8eb2e.png `,
+                `https://share.sketchpad.app/24/e2b-adee-5a9f21.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/17c-fcb4-647de4.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/4b7-a94c-66d5ca.png `,
+                `https://share.sketchpad.app/24/1d9-8ecf-b8eb2e.png `,
+                `https://share.sketchpad.app/24/e2b-adee-5a9f21.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/1d9-8ecf-b8eb2e.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/4b7-a94c-66d5ca.png `,
+                `https://share.sketchpad.app/24/17c-fcb4-647de4.png`,
+                `https://share.sketchpad.app/24/e2b-adee-5a9f21.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/e2b-adee-5a9f21.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/4b7-a94c-66d5ca.png `,
+                `https://share.sketchpad.app/24/17c-fcb4-647de4.png`,
+                `https://share.sketchpad.app/24/1d9-8ecf-b8eb2e.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/e97-ca85-4aeef4.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/87e-9141-cbef57.png`,
+                `https://share.sketchpad.app/24/322-977c-6c2ffc.png `,
+                `https://share.sketchpad.app/24/017-00fe-a0c9e2.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/87e-9141-cbef57.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/e97-ca85-4aeef4.png `,
+                `https://share.sketchpad.app/24/322-977c-6c2ffc.png `,
+                `https://share.sketchpad.app/24/017-00fe-a0c9e2.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/322-977c-6c2ffc.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/e97-ca85-4aeef4.png `,
+                `https://share.sketchpad.app/24/87e-9141-cbef57.png`,
+                `https://share.sketchpad.app/24/017-00fe-a0c9e2.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/017-00fe-a0c9e2.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/e97-ca85-4aeef4.png `,
+                `https://share.sketchpad.app/24/87e-9141-cbef57.png`,
+                `https://share.sketchpad.app/24/322-977c-6c2ffc.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+    }
+    function CoolYellow(){
+        if(buddy.src===`https://share.sketchpad.app/24/05c-20e8-c7c86b.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/118-b716-2f60e5.png`,
+                ` https://share.sketchpad.app/24/20d-e834-5f8df1.png `,
+                `https://share.sketchpad.app/24/0d7-9d25-0b665d.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/118-b716-2f60e5.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/05c-20e8-c7c86b.png `,
+                ` https://share.sketchpad.app/24/20d-e834-5f8df1.png `,
+                `https://share.sketchpad.app/24/0d7-9d25-0b665d.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/20d-e834-5f8df1.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/05c-20e8-c7c86b.png `,
+                `https://share.sketchpad.app/24/118-b716-2f60e5.png`,
+                `https://share.sketchpad.app/24/0d7-9d25-0b665d.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/0d7-9d25-0b665d.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/05c-20e8-c7c86b.png `,
+                `https://share.sketchpad.app/24/118-b716-2f60e5.png`,
+                ` https://share.sketchpad.app/24/20d-e834-5f8df1.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/917-c635-67c6d6.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/435-ff4a-730504.png`,
+                ` https://share.sketchpad.app/24/abf-dbad-a755d2.png `,
+                `https://share.sketchpad.app/24/fff-612b-ecc86d.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/435-ff4a-730504.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/917-c635-67c6d6.png`,
+                ` https://share.sketchpad.app/24/abf-dbad-a755d2.png `,
+                `https://share.sketchpad.app/24/fff-612b-ecc86d.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/abf-dbad-a755d2.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/abf-dbad-a755d2.png `,
+                `https://share.sketchpad.app/24/435-ff4a-730504.png`,
+                `https://share.sketchpad.app/24/fff-612b-ecc86d.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/fff-612b-ecc86d.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/917-c635-67c6d6.png`,
+                `https://share.sketchpad.app/24/435-ff4a-730504.png`,
+                ` https://share.sketchpad.app/24/abf-dbad-a755d2.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/a19-283f-9e76a6.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/0df-8f90-b4973d.png `,
+                `https://share.sketchpad.app/24/202-c1ae-80a675.png `,
+                `https://share.sketchpad.app/24/cc1-1a66-27b812.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/0df-8f90-b4973d.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/a19-283f-9e76a6.png  `,
+                `https://share.sketchpad.app/24/202-c1ae-80a675.png `,
+                `https://share.sketchpad.app/24/cc1-1a66-27b812.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/202-c1ae-80a675.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/a19-283f-9e76a6.png  `,
+                `https://share.sketchpad.app/24/0df-8f90-b4973d.png `,
+                `https://share.sketchpad.app/24/cc1-1a66-27b812.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/cc1-1a66-27b812.png`){
+            let pic =[
+                ` https://share.sketchpad.app/24/a19-283f-9e76a6.png  `,
+                `https://share.sketchpad.app/24/0df-8f90-b4973d.png `,
+                `https://share.sketchpad.app/24/202-c1ae-80a675.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+    }
+    function CoolPink(){
+        if(buddy.src===`https://share.sketchpad.app/24/724-dfe2-e04049.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/8b3-3f19-f9ab6a.png`,
+                `https://share.sketchpad.app/24/d8f-6272-e01e4e.png `,
+                `https://share.sketchpad.app/24/309-de03-bcc8be.png  `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/8b3-3f19-f9ab6a.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/724-dfe2-e04049.png `,
+                `https://share.sketchpad.app/24/d8f-6272-e01e4e.png `,
+                `https://share.sketchpad.app/24/309-de03-bcc8be.png  `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/d8f-6272-e01e4e.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/724-dfe2-e04049.png `,
+                `https://share.sketchpad.app/24/8b3-3f19-f9ab6a.png`,
+                `https://share.sketchpad.app/24/309-de03-bcc8be.png  `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/309-de03-bcc8be.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/724-dfe2-e04049.png `,
+                `https://share.sketchpad.app/24/8b3-3f19-f9ab6a.png`,
+                `https://share.sketchpad.app/24/d8f-6272-e01e4e.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/7b9-d9c4-912828.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/b23-0569-3287a4.png `,
+                `https://share.sketchpad.app/24/7ba-5687-3bf332.png `,
+                `https://share.sketchpad.app/24/588-000e-4af404.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/b23-0569-3287a4.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/7b9-d9c4-912828.png`,
+                `https://share.sketchpad.app/24/7ba-5687-3bf332.png `,
+                `https://share.sketchpad.app/24/588-000e-4af404.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/7ba-5687-3bf332.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/7b9-d9c4-912828.png`,
+                `https://share.sketchpad.app/24/b23-0569-3287a4.png `,
+                `https://share.sketchpad.app/24/588-000e-4af404.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/588-000e-4af404.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/7b9-d9c4-912828.png`,
+                `https://share.sketchpad.app/24/b23-0569-3287a4.png `,
+                `https://share.sketchpad.app/24/7ba-5687-3bf332.png `,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+
+
+        if(buddy.src===`https://share.sketchpad.app/24/e9b-bf0c-e1f072.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/6e6-c600-ef898d.png `,
+                `https://share.sketchpad.app/24/aaa-e823-4864d5.png`,
+                ``,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/6e6-c600-ef898d.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/e9b-bf0c-e1f072.png`,
+                `https://share.sketchpad.app/24/aaa-e823-4864d5.png`,
+                `https://share.sketchpad.app/24/b1e-164c-02f302.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/aaa-e823-4864d5.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/e9b-bf0c-e1f072.png`,
+                `https://share.sketchpad.app/24/6e6-c600-ef898d.png `,
+                `https://share.sketchpad.app/24/b1e-164c-02f302.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+
+        if(buddy.src===`https://share.sketchpad.app/24/b1e-164c-02f302.png`){
+            let pic =[
+                `https://share.sketchpad.app/24/e9b-bf0c-e1f072.png`,
+                `https://share.sketchpad.app/24/6e6-c600-ef898d.png `,
+                `https://share.sketchpad.app/24/aaa-e823-4864d5.png`,
+            ]
+            let i = Math.floor(Math.random()*pic.length)
+            return buddy.src= pic[i]
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
